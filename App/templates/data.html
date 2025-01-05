@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Data</title>
+        <!-- Favicon-->
+<!-- temp ico need to replace-->
+ <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel= "stylesheet" type= "text/css" href= "../static/css/styles.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+        <!-- Custom CSS -->
+        <link rel= "stylesheet" type= "text/css" href= "../static/css/custom.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/custom.css') }}">
+    </head>
+    <body id="page-top" style="background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%)">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="index.html">Our Divine Service</a></li>
+                <li class="sidebar-nav-item"><a href="index.html">Home</a></li>
+                <li class="sidebar-nav-item"><a href="about.html">About</a></li>
+                <li class="sidebar-nav-item"><a href="data.html">Data</a></li>
+                <li class="sidebar-nav-item"><a href="journey.html">The Journey</a></li>
+                <li class="sidebar-nav-item"><a href="demo.html">Try Our Product</a></li>
+            </ul>
+        </nav>
+        <!-- Services-->
+        <section class="about-sizing content-sectiontext-white text-center" id="services" style="background-repeat: repeat-y !important; font-family:kalam">
+            <div class="container px-3 px-lg-4">
+                <div class="content-section-heading">
+                    <header class="mb-5 about-header">Data Exploration</header>
+                </div>
+            </div>
+           <div class="row justify-content-center" style="border:none; background:none; height:210px; margin-top: 80px; margin-bottom:300px;">
+             <div class="col-sm mt-6">
+               <h1>
+                 Data sets
+               </h1>
+               <p style="margin-left:18rem; margin-right:18rem; font-size:20px">
+                <em>For our data sets, we had scavenged a full data set of around 21K+ emotional phases from 3 data sets in total which each data set file had contained a large table. This table we had to go through to get only the names of every emotion and every quote in a corresponding order separated by a ';'. We had then added such to a text file where such file was fed into our AI text model to be trained on which took roughly about a hour. We had successfully accomplished this for all 3 data sets we had gotten for our model, originating from Red it. This data set is known as "Go Emotions" where we had ignored the rest of the given data for such data that was provided for the breakdown of emotions relating them to negative or positive type of emotional analysis.For our second hand data set, we had classed each emotion given in the first data set then used Open AI to generate 10 emotional phrases, some of which became slightly biblical in nature when quoting from people such as Winston Churchill, Albert Einstein, and even one from Jesus Christ oddly enough. These quotes were then given the same treatment as the first data set though it was easier considering we were inputting quotes for specific emotions. This second hand data set we called the "fortune cookie data set", we had split the emotion to which we manually applied into the emotion it corresponds to and the quote. As explained previously or in the future of this project, this emotion it corresponds to is then matched with the emotional analysis of the user input. If the emotion of the quote matches, the fortune cookie quote is then printed to the user as a form of advice.</em><br>
+               </p><br>
+             </div>
+          </div><br>
+          <!--Here is one row (figure + description)-->
+          <!------------------------------------------>
+          <div class="row justify-content-center" style="border:none; background:none; height:210px; margin-top: 80px">
+              <div class="col-sm mb-6">
+                <img src="{{url_for('static',filename = 'images/full_corpus_word_map.png')}}" style="width:500px; margin-left:-15px;" class = "shadow p-1 mb-5 bg-white rounded" />
+              </div>
+              <div class="col-sm mb-6">
+                <h1>Full Corpus Word Map</h1>
+                <p style="font-size:25px; backdrop-filter: blur(3px); border-radius: 15px; color: #505050; margin-right: 50px; margin-left: 50px; text-align: left;">To the left is a word map built using all the words in our training data corpus. Word maps like these help us visualize the relative frequency of each word. For example, the words "name" and "love" appear frequently in the training data set so they appear larger than the other words. Other emotion labels like admiration, approval, and anger are also fairly large. These words are a subset of the training labels so we expect them to be present frequently. </p>
+              </div>
+            </div>
+            <!------------------------------------------>
+            <!------------------------------------------>
+
+
+
+          <!--Here is second row (figure + description)-->
+          <!------------------------------------------>
+          <div class="row justify-content-center" style="border:none; background:none; height:210px; margin-top: 200px; font-family:kalam">
+              <div class="col-sm mt-6">
+                <h1>Emotions Word Map</h1>
+                <p style="font-size:25px; backdrop-filter: blur(3px); border-radius: 15px; color: #505050; margin-right: 50px; margin-left: 50px; text-align: left;">In addition to the word map produced on the entire text corpus, we also produced a word map using only the emotion labels at right. This word map visualizes the relative frequency  </p>
+              </div>
+            <div class="col-sm mt-6">
+                <img src="{{url_for('static',filename = 'images/lables_word_map.png')}}" style="width:500px; margin-left:-15px;" class = "shadow p-1 mb-5 bg-white rounded" />
+              </div>
+            </div>
+            <!------------------------------------------>
+            <!------------------------------------------>
+          
+          
+           <!--Here is second row (figure + description)-->
+          <!------------------------------------------>
+          <div class="row justify-content-center" style="border:none; background:none; height:210px; margin-top: 200px">
+              <div class="col-sm mt-6">
+                <img src="{{url_for('static',filename = 'images/emotion_distribution.png')}}" style="width:800px; margin-left:-15px;" class = "shadow p-1 mb-5 bg-white rounded" />
+              </div>
+              <div class="col-sm mt-6">
+                <h1>Emotions Bar-Chart</h1>
+                <p style="font-size:25px; backdrop-filter: blur(3px); border-radius: 15px; color: #505050; margin-right: 50px; margin-left: 50px; text-align: left;">The bar chart gives us a visual-numerical representation of the frequency with which emotions occur in the training data. Originally, neutral emotions dominated the data set biasing our language model towards labeling statements as neutral. Randomly removing a proportion of these observations produced a less biased model. </p>
+              </div>
+            </div>
+            <!------------------------------------------>
+            <!------------------------------------------>
+          
+          
+          <!--Here is second row (figure + description)-->
+          <!------------------------------------------>
+          <div class="row justify-content-center" style="border:none; background:none; height:210px; margin-top: 400px">
+              <div class="col-sm mt-6">
+                <h1>3D-PCA Word Embedding Visualization</h1>
+                <p style="font-size:25px; backdrop-filter: blur(3px); border-radius: 15px; color: #505050; margin-right: 50px; margin-left: 50px; text-align: left;">Using a pretrained Word2Vec model, vectorized words were plotted in Euclidean 3-space. By converting words to vectors we can conceptualize distance and angle in non-euclidean space. Words that are contextually more similar should appear near one another in the grid. For example, we can see that approve and approved are one another's nearest neighbors (bottom left). Similarly, joy, passion, happiness, loving, and spirit are plotted in the same cluster. </p>
+              </div>
+            <div class="col-sm mt-6">
+                <img src="{{url_for('static',filename = 'images/pca_embedding_viz.png')}}" style="width:800px; margin-left:-15px; margin-bottom:5em" class = "shadow p-1 mb-5 bg-white rounded" />
+              </div>
+            </div>
+            <!------------------------------------------>
+            <!------------------------------------------>
+
+        </section>
+
+        <!-- Scroll to Top Button-->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">           </script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+          <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+    </body>
+</html>
