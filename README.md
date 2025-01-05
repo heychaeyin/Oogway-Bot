@@ -1,7 +1,7 @@
 # Oogway Bot: Sentiment Analysis & Philosophical Advice
 
 This project is a sentiment analysis tool that detects emotions in user-provided text and returns a piece of philosophical advice tailored to those emotions. It was created in the Summer of 2022 as a part of [**AI Camp's**](https://www.ai-camp.org/) summer session along with five other teammates and a mentor to guide us. 
-
+> **Note:** This project was completed a while ago; as a result, some files or resources may be outdated or missing so I don't think the project can run. 
 ---
 
 ## Table of Contents
